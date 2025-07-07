@@ -1,0 +1,136 @@
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    background: #f5f7fa;
+    overflow-x: hidden;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #002147, #004080);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    max-width: 800px;
+    padding: 0 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.scroll-btn {
+    display: inline-block;
+    background: #ffc107;
+    color: #002147;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.scroll-btn:hover {
+    background: #e0a800;
+}
+
+/* TIPS SECTION */
+.tips-section {
+    position: relative;
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 4rem 2rem;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.animated-bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(270deg, #00bfff, #0074d9, #004080, #002147);
+    background-size: 800% 800%;
+    animation: gradientMove 15s ease infinite;
+    z-index: 0;
+    opacity: 0.2;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.tip {
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-left: 8px solid #002147;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+    z-index: 1;
+}
+
+.tip.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tip h2 {
+    color: #002147;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background: #002147;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+/* Existing hero styles stay same */
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content .subtagline {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
